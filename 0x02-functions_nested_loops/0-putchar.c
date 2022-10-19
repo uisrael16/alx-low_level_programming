@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  *  * main - Print "Holberton"
@@ -14,7 +14,7 @@ int main(void)
 	while (i < 9)
 	{
 		_putchar(name_of_school[i]);
-		i++;	
+		i++;
 	}
 	_putchar('\n');
 	return (0);
