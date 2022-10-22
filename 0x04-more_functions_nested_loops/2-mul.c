@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 int mul(int a, int b)
 {
