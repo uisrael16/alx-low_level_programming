@@ -10,20 +10,11 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	size_t	counter;
-	size_t	len;
+	int i;
 
-	len = ft_strlen(src);
-	counter = 0;
-	while (!src)
-	{
-		return (NULL);
-	}
-	while (counter < len)
-	{
-		dst[counter] = src[counter];
-		counter++;
-	}
-	dst[counter] = '\0';
-	return (dst);
+	for (i = 0; src[i] != '\0'; i++)
+		dest[i] = src[i];
+	for ( ; i < src[i]; i++)
+		dest[i] = '\0';
+	return (dest);
 }
