@@ -1,4 +1,4 @@
-#include "maini.h"
+#include "main.h"
 
 /**
  * rev_string - function with one argument
