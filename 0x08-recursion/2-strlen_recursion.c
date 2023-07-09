@@ -1,6 +1,8 @@
 #include "main.h"
 
 /*
+ * The strlen() function calculates the length of the string pointed
+       to by s, excluding the terminating null byte ('\0').
  * strlen_recursion - Prints the length of a string.
  * @s: the string to be printed
  * Return: the length of string
