@@ -7,16 +7,14 @@
  *
  * Return: pointer to the allocated memory or 98 on failure.
  */
-void *malloc_checked(unsigned int b)
-{
-    char *p;
 
-    p = malloc(b);
-    if (p == NULL)
-    {
-        return (98);
+void *malloc_checked(unsigned int b) {
+    void *ptr = malloc(b);
+
+    if (ptr == NULL) {
+        exit(98);
     }
 
-    return (p);
+    return ptr;
 }
 
