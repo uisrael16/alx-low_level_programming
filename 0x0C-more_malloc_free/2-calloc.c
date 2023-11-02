@@ -10,24 +10,23 @@
  * if malloc fails, returns NULL.
  */
 
+#include <stdlib.h>
+
 void *_calloc(unsigned int nmemb, unsigned int size) {
-    if (nmemb == 0 || size == 0) {
+    char *p;
+    unsigned int i;
+
+    if (nmemb == 0 || size == 0)
         return NULL;
-    }
 
-   
-    size_t total_size = (size_t)nmemb * size;
+    p = malloc(nmemb * size);
 
-    
-    void *ptr = malloc(total_size);
-
-    if (ptr == NULL) {
+    if (p == NULL)
         return NULL;
-    }
-    for (size_t i = 0; i < total_size; i++) {
-        *((char *)ptr + i) = 0;
-    }
 
-    return ptr;
+    for (i = 0; i < (nmemb * size); i++)
+        p[i] = 0;
+
+    return p;
 }
 
