@@ -3,8 +3,9 @@
 #include <string.h>
 
 /**
- * _strdup - returns a pointer to a newly allocated space in memory.
- * @str: string.
+ * str_concat - concatenates two strings.
+ * @s1: first string.
+ * @s2: second string.
  *
  * Return: pointer of an array of chars
  */
