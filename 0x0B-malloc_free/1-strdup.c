@@ -10,23 +10,23 @@
 
 char    *_strdup(char *str)
 {
-    char *newStr;
-    size_t len;
+	char *newStr;
+	size_t len;
 
-    if (str == NULL)
-    {
-        return (NULL);
-    }
-    len = strlen(str);
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	len = strlen(str);
 
-    newStr = (char *)malloc(len + 1);
+	newStr = (char *)malloc(len + 1);
 
-    if (newStr == NULL)
-    {
-        return (NULL);
-    }
+	if (newStr == NULL)
+	{
+		return (NULL);
+	}
 
-    strcpy(newStr, str);
+	strcpy(newStr, str);
 
-    return (newStr);
+	return (newStr);
 }
