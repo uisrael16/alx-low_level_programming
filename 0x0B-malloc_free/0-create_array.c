@@ -10,21 +10,22 @@
 
 char *create_array(unsigned int size, char c) {
 
-    unsigned int i;
-    char *charArray;
-    if (size == 0) {
-        return NULL;
-    }
+	unsigned int i;
+	char *charArray;
 
-    charArray = (char *)malloc(size * sizeof(char));
+	if (size == 0) {
+		return NULL;
+	}
 
-    if (charArray == NULL) {
-        return NULL;
-    }
+	charArray = (char *)malloc(size * sizeof(char));
 
-    for (i = 0; i < size; i++) {
-        charArray[i] = c;
-    }
+	if (charArray == NULL) {
+		return NULL;
+	}
 
-    return charArray;
+	for (i = 0; i < size; i++) {
+		charArray[i] = c;
+	}
+
+	return charArray;
 }
