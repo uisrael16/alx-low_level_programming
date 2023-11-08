@@ -8,7 +8,7 @@
  * Return: pointer of an array of chars
  */
 
-char *create_array(unsigned int size, char c) 
+char	*create_array(unsigned int size, char c) 
 {
 
 	unsigned int i;
@@ -16,17 +16,18 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	charArray = (char *)malloc(size * sizeof(char));
 
 	if (charArray == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
-	for (i = 0; i < size; i++) {
+	for (i = 0; i < size; i++)
+       	{
 		charArray[i] = c;
 	}
 
