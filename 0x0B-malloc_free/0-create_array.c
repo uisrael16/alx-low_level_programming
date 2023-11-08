@@ -15,14 +15,14 @@ char *create_array(unsigned int size, char c)
 	char *charArray;
 
 	if (size == 0)
-       	{
+	{
 		return NULL;
 	}
 
 	charArray = (char *)malloc(size * sizeof(char));
 
 	if (charArray == NULL)
-       	{
+	{
 		return NULL;
 	}
 
@@ -30,5 +30,5 @@ char *create_array(unsigned int size, char c)
 		charArray[i] = c;
 	}
 
-	return charArray;
+	return (charArray);
 }
