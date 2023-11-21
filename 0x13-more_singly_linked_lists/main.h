@@ -9,7 +9,8 @@
  *  Definition of the list node structure
  */
 
-typedef struct listint_t {
+typedef struct listint_t
+{
     int data;
     struct listint_t *next;
 } listint_t;
