@@ -1,13 +1,17 @@
+#include "main.h"
 
 /**
- * Check if the current character is not a valid binary digit
- *Invalid character, return 0
- *Convert the character to the corresponding binary digit
+ * binary_to_uint - converts a binary number to an
+ * unsigned int.
+ * @b: binary.
+ *
+ * Return: result.
  */
 
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int result;
+
 	if (b == NULL)
 	{
 		return (0);
